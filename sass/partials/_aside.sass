@@ -1,0 +1,61 @@
+aside > *
+    margin: 1rem
+
+aside
+    @include display(flex)
+    flex-direction: column
+    align-items: center
+    width: 20rem
+    background-color: lighten(#000, 10%)
+    color: #fff
+    font-size: 1.5rem
+
+    h1
+        @include display(flex)
+        flex-direction: column
+        font-size: 5rem
+        line-height: 5rem
+
+        .lastname
+            font-family: open
+
+    i
+        font-size: 2rem
+        margin-left: 1rem
+
+    figure
+        width: 16rem
+        height: 16rem
+        overflow: hidden
+        background-color: #fff
+        border-radius: 50%
+
+    h2
+        border-bottom: 1px solid #fff
+        margin: 1rem 0
+
+    section
+        width: 18rem
+        margin-left: 3rem
+
+    a
+        color: #fff
+        text-decoration: none
+
+        &:hover
+            color: #80ff44
+
+    .contact
+        @include display(flex)
+        flex-direction: column
+
+        .mobile
+            font-size: 1.5rem
+
+        .email
+            font-size: 1.25rem
+            line-height: 3rem
+
+    .social
+        @include display(flex)
+        flex-direction: column
