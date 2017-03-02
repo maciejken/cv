@@ -1,3 +1,71 @@
 main
     @include display(flex)
     flex-direction: column
+    align-items: center
+    width: 54rem
+    background-color: #fff
+
+    header
+        @include display(flex)
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 17rem
+        background-color: #8fb4ef
+
+
+        h1
+            font-family: open_sansregular, Arial, sans-serif
+            font-size: 5rem
+
+        h2
+            font-size: 3rem
+
+    section
+        background-color: #fff
+        font-size: 1.5rem
+        padding: 1rem
+        width: 50rem
+
+        h2
+            font-size: 2rem
+            margin: 1rem 0 1rem
+
+    #skills
+        @include display(flex)
+        flex-direction: row
+        flex-wrap: wrap
+
+        figure
+            margin: 2rem
+            width: 5rem
+            position: relative
+            max-width: none
+
+        .progress
+            position: absolute
+            width: 7rem
+            top: -1rem
+            left: -1rem
+
+    #education, #experience
+        @include display(flex)
+        flex-direction: column
+
+        figure
+            @include display(flex)
+            align-items: flex-start
+            max-width: none
+            width: 100%
+            margin: 1rem 0
+
+        img
+            margin-right: 2rem
+            width: 20rem
+
+        figcaption
+            font-size: 1.25rem
+
+        h3
+            font-family: 'open_sanssemibold', Arial, sans-serif

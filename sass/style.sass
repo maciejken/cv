@@ -8,7 +8,7 @@ $mobile: 500px
 $tablet: 1000px
 
 html
-    font-size: 12px
+    font-size: 10px
 // kartka A4: 210 x 297 mm
 // 100 mm = 3,937 in
 // kartka A4: 8.26 x 11.69in
@@ -16,12 +16,13 @@ html
 body
     @include display(flex)
     justify-content: center
+    background-color: #888
 .container
     @include display(flex)
     font-family: open_sanslight, Arial, sans-serif
-    width: 82.6rem
-    height: 116.9rem
-    background-color: darken(#fff, 20%)
+    width: 78rem
+    height: 107rem
+    // border: 1px solid black
 
 @import 'partials/aside'
 @import 'partials/main'
