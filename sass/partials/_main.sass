@@ -2,7 +2,7 @@ main
     @include display(flex)
     flex-direction: column
     align-items: center
-    width: 54rem
+    width: 57rem
     background-color: #fff
 
     header
@@ -22,6 +22,9 @@ main
         h2
             font-size: 3rem
 
+        h1, h2
+            width: 40rem
+
     section
         background-color: #fff
         font-size: 1.5rem
@@ -38,7 +41,7 @@ main
         flex-wrap: wrap
 
         figure
-            margin: 2rem
+            margin: 1rem
             width: 5rem
             position: relative
             max-width: none
@@ -49,7 +52,7 @@ main
             top: -1rem
             left: -1rem
 
-    #education, #experience
+    #education
         @include display(flex)
         flex-direction: column
 
@@ -69,3 +72,16 @@ main
 
         h3
             font-family: 'open_sanssemibold', Arial, sans-serif
+
+    #experience
+        @extend #education
+
+        img
+            width: 16rem
+
+    footer
+        width: 50rem
+        font-size: 0.9rem
+
+        hr
+            margin-top: 4rem
