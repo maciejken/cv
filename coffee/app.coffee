@@ -1,4 +1,28 @@
-document.addEventListener 'DOMContentLoaded', ->
+$ ->
+
+    aside = $('aside')
+    face = aside.find '#face'
+    header = $('#mobile-header')
+
+    mobilize = () ->
+        if window.matchMedia('(max-width: 799px)').matches
+            header.on 'click', (e)->
+                face.fadeToggle()
+                e.stopImmediatePropagation()
+            headers = aside.find 'h2'
+            headers.on 'click', (e)->
+                $(@).next().slideToggle()
+                headers.not($(@)).next().slideUp()
+                e.stopImmediatePropagation()
+        else
+            try
+                header.off 'click'
+                headers.off 'click'
+
+    mobilize()
+
+    $(window).on 'resize', ->
+        mobilize()
 
     languages =
         'polish' : 0.95

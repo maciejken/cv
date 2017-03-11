@@ -1,11 +1,10 @@
-aside > *
-    margin: 1rem
+// aside > *
+//     margin: 1rem
 
 aside
     @include display(flex)
     flex-direction: column
     align-items: center
-    width: 25rem
     background-color: lighten(#000, 20%)
     color: #fff
     font-size: 1.5rem
@@ -16,36 +15,34 @@ aside
         font-size: 5rem
         line-height: 5rem
 
-        .lastname
-            font-family: open
-
     i[class*=fa]
         font-size: 2rem
-        margin-left: 1rem
+        // margin-left: 1rem
 
     figure
-        margin-top: 3rem
-        width: 16rem
-        height: 16rem
+        display: none
+        margin: 2rem
+        width: 50vw
+        height: 50vw
         overflow: hidden
         background-color: #fff
         border-radius: 50%
 
     h2
         font-size: 1.5rem
-        border-bottom: 1px solid #fff
-        margin: 1rem 0
+        background-color: lighten(#000, 25%)
+        width: 100%
+        text-align: center
+        // margin: 1rem 0
 
     section
-        width: 23rem
-        margin-left: 3rem
         line-height: 3rem
         font-size: 1.25rem
+        width: 100%
 
         p
             line-height: 2rem
-            margin: 0 1rem
-            width: 20rem
+            margin: 1rem 0
 
     span
         padding: 1rem
@@ -57,23 +54,21 @@ aside
         &:hover
             color: #80ff44
 
-    .contact
-        @include display(flex)
-        flex-direction: column
+    .info
+        display: none
+        padding: 0 1rem
+
+        i.fa
+            margin-left: 1rem
 
 
-    .social
-        @include display(flex)
-        flex-direction: column
+    // .social
+    //     @include display(flex)
+    //     flex-direction: column
 
     .languages
-        .lang
-            @include display(flex)
-            align-items: center
-            line-height: 1.5rem
-            margin: 1rem 0
 
-        .lang .progress
+        .info .progress
             height: 3rem
             width: 3rem
             position: absolute
@@ -81,8 +76,8 @@ aside
             left: -0.235rem
 
         figure
-            display: inline-block
-            margin: 0 1rem
+            display: block
+            margin: 1rem
             height: 2.5rem
             width: 2.5rem
             position: relative
@@ -93,6 +88,16 @@ aside
             width: 2.5rem
             height: 2.5rem
             border-radius: 50%
+
+        figcaption
+            @include display(flex)
+            flex-direction: column
+            line-height: 1.5rem
+            margin: 1rem 0
+            width: 15rem
+            position: absolute
+            top: -1.3rem
+            left: 4rem
 
         span
             margin: 0
@@ -110,3 +115,97 @@ aside
 //
 //         h2
 //             border-bottom: 1px solid #000
+
+@media screen and (min-width: 800px)
+    aside
+        width: 25rem
+        order: 0
+
+        i[class*=fa]
+            font-size: 2rem
+            margin-left: 1rem
+
+        figure
+            display: block
+            margin-top: 3rem
+            width: 16rem
+            height: 16rem
+            overflow: hidden
+            background-color: #fff
+            border-radius: 50%
+            max-width: 400px
+
+        h2
+            font-size: 1.5rem
+            border-bottom: 1px solid #fff
+            margin: 1rem 0
+            background-color: transparent
+            text-align: left
+
+        section
+            width: 23rem
+            margin-left: 3rem
+            line-height: 3rem
+            font-size: 1.25rem
+
+            p
+                line-height: 2rem
+                // margin: 1rem
+                width: 20rem
+
+        span
+            padding: 1rem
+
+        a
+            color: #fff
+            text-decoration: none
+
+            &:hover
+                color: #80ff44
+
+        .info
+            display: block
+
+        .languages
+            .info
+                // @include display(flex)
+                // align-items: center
+                line-height: 1.5rem
+                margin: 1rem 0
+
+            .info .progress
+                height: 3rem
+                width: 3rem
+                position: absolute
+                top: -0.25rem
+                left: -0.235rem
+
+            figure
+                display: block
+                margin: 1rem
+                // height: 2.5rem
+                // width: 2.5rem
+                position: relative
+                overflow: visible
+
+            img
+                filter: grayscale(60%)
+                width: 2.5rem
+                height: 2.5rem
+                border-radius: 50%
+
+            figcaption
+                @include display(flex)
+                flex-direction: column
+                line-height: 1.5rem
+                margin: 1rem 0
+                width: 15rem
+                position: absolute
+                top: -1.3rem
+                left: 4rem
+
+            span
+                margin: 0
+                padding: 0
+                font-size: 1rem
+                color: darken(#fff, 30%)
