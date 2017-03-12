@@ -15,7 +15,7 @@ aside
         font-size: 5rem
         line-height: 5rem
 
-    i[class*=fa]
+    i.fa
         font-size: 2rem
         // margin-left: 1rem
 
@@ -33,33 +33,31 @@ aside
         background-color: lighten(#000, 25%)
         width: 100%
         text-align: center
-        // margin: 1rem 0
+        margin: 1px 0
+        padding: 0.5rem
 
     section
-        line-height: 3rem
+        // line-height: 3rem
         font-size: 1.25rem
         width: 100%
 
-        p
-            line-height: 2rem
-            margin: 1rem 0
-
-    span
-        padding: 1rem
-
-    a
-        color: #fff
-        text-decoration: none
-
-        &:hover
-            color: #80ff44
-
     .info
         display: none
-        padding: 0 1rem
+        padding: 1rem
+
+        a
+            display: block
+            color: #fff
+            text-decoration: none
+            padding: 1rem
+            width: auto
+            border: 1px solid lighten(#000, 20%)
+
+        a[href]
+            background-color: lighten(#000, 25%)
 
         i.fa
-            margin-left: 1rem
+            margin: 0 0.5rem
 
 
     // .social
@@ -96,7 +94,7 @@ aside
             margin: 1rem 0
             width: 15rem
             position: absolute
-            top: -1.3rem
+            top: -1.2rem
             left: 4rem
 
         span
@@ -121,13 +119,12 @@ aside
         width: 25rem
         order: 0
 
-        i[class*=fa]
-            font-size: 2rem
-            margin-left: 1rem
+        // i[class*=fa]
+        //     font-size: 2rem
+        //     margin: 0 1rem
 
         figure
             display: block
-            margin-top: 3rem
             width: 16rem
             height: 16rem
             overflow: hidden
@@ -138,41 +135,30 @@ aside
         h2
             font-size: 1.5rem
             border-bottom: 1px solid #fff
-            margin: 1rem 0
+            // margin: 1rem 0
             background-color: transparent
             text-align: left
 
         section
-            width: 23rem
-            margin-left: 3rem
-            line-height: 3rem
+            width: 100%
+            padding: 0 0 0 2rem
             font-size: 1.25rem
-
-            p
-                line-height: 2rem
-                // margin: 1rem
-                width: 20rem
-
-        span
-            padding: 1rem
-
-        a
-            color: #fff
-            text-decoration: none
-
-            &:hover
-                color: #80ff44
 
         .info
             display: block
 
-        .languages
-            .info
-                // @include display(flex)
-                // align-items: center
-                line-height: 1.5rem
-                margin: 1rem 0
+            a
+                color: #fff
+                text-decoration: none
 
+            a[href]
+                background-color: transparent
+
+                &:hover
+                    // color: #80ff44
+                    background-color: lighten(#000, 10%)
+
+        .languages
             .info .progress
                 height: 3rem
                 width: 3rem
@@ -194,15 +180,14 @@ aside
                 height: 2.5rem
                 border-radius: 50%
 
-            figcaption
-                @include display(flex)
-                flex-direction: column
-                line-height: 1.5rem
-                margin: 1rem 0
-                width: 15rem
-                position: absolute
-                top: -1.3rem
-                left: 4rem
+            // figcaption
+            //     @include display(flex)
+            //     flex-direction: column
+            //     line-height: 1.5rem
+            //     margin: 1rem 0
+            //     width: 15rem
+            //     position: absolute
+
 
             span
                 margin: 0
