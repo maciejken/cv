@@ -27,12 +27,13 @@ main
 
     section
         background-color: #fff
-        font-size: 1.5rem
+        font-size: 1.25rem
         padding: 1rem
+        margin: 0.5rem 0
 
         h2
             font-size: 2rem
-            margin: 1rem 0 1rem
+            margin: 1rem
 
     #skills
         @include display(flex)
@@ -40,20 +41,65 @@ main
         flex-wrap: wrap
 
         figure
-            margin: 1rem
-            width: 5rem
+            margin: 0.75rem
             position: relative
             max-width: none
 
-            img
-                max-width: none
-                width: 100%
+            // img
+            //     max-width: none
+            //     width: 100%
 
         .progress
             position: absolute
             width: 7rem
             top: -1rem
             left: -1rem
+
+        .skills
+            background-image: url(images/skills.png)
+            background-repeat: no-repeat
+            display: block
+            width: 100px
+            height: 100px
+            zoom: 0.75
+            -moz-transform: scale(0.75)
+            -moz-transform-origin: 0 0
+
+        .skills-html5
+            background-position: -5px -5px
+
+        .skills-php
+            background-position: -115px -5px
+
+        .skills-coffee
+            background-position: -225px -5px
+
+        .skills-css3
+            background-position: -5px -115px
+
+        .skills-git
+            background-position: -115px -115px
+
+        .skills-gulpjs
+            background-position: -225px -115px
+
+        .skills-jquery
+            background-position: -5px -225px
+
+        .skills-js
+            background-position: -115px -225px
+
+        .skills-python3
+            background-position: -225px -225px
+
+        .skills-sass
+            background-position: -335px -5px
+
+        .skills-terminal
+            background-position: -335px -115px
+
+        .skills-wordpress
+            background-position: -335px -225px
 
     #education
         @include display(flex)
@@ -72,7 +118,7 @@ main
             width: 100%
 
         figcaption
-            font-size: 1.25rem
+            font-size: 1rem
             margin: 1rem 0
 
         h3
@@ -89,9 +135,9 @@ main
         padding: 1rem
 
         hr
-            margin-top: 4rem
+            margin-top: 2rem
 
-@media screen and (min-width: 800px)
+@media all and (min-width: 700px)
     header
         display: none
 
@@ -127,6 +173,7 @@ main
             font-size: 1.5rem
             padding: 1rem
             width: 50rem
+            margin: 1rem
 
             h2
                 font-size: 2rem
@@ -139,15 +186,21 @@ main
 
             figure
                 margin: 1rem
-                width: 5rem
                 position: relative
                 max-width: none
+                width: 5rem
+                height: 5rem
 
-            .progress
-                position: absolute
-                width: 7rem
-                top: -1rem
-                left: -1rem
+            // .progress
+            //     position: absolute
+            //     width: 7rem
+            //     top: -1rem
+            //     left: -1rem
+
+            .skills
+                zoom: 0.5
+                -moz-transform: scale(0.5)
+                -moz-transform-origin: 0 0
 
         #education
             @include display(flex)
@@ -159,23 +212,18 @@ main
                 align-items: flex-start
                 max-width: none
                 width: 100%
-                margin: 0.5rem 0
+                margin: 1rem 0
 
             img
                 margin-right: 2rem
-                width: 20rem
+                width: 16rem
 
             figcaption
+                margin: 0 0 0 2rem
                 font-size: 1.25rem
 
             h3
                 font-family: 'open_sanssemibold', Arial, sans-serif
-
-        // #experience
-        //     @extend #education
-
-            img
-                width: 16rem
 
         footer
             width: 50rem
@@ -183,4 +231,4 @@ main
             // order: 3
 
             hr
-                margin-top: 4rem
+                margin-top: 2rem

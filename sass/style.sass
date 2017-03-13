@@ -24,12 +24,17 @@ body
     flex-wrap: wrap
     // border: 1px solid black
 
-@media screen and (min-width: 800px)
+// @media print
+//     html
+//         font-size: 8px
+
+@media all and (min-width: 700px)
     html
         font-size: 10px
     .container
         @include display(flex)
         flex-direction: row
+        flex-wrap: nowrap
         width: 80rem
         height: 114rem
 
