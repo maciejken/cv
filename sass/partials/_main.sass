@@ -137,7 +137,7 @@ main
         hr
             margin-top: 2rem
 
-@media all and (min-width: 700px)
+@media screen and (min-width: 800px)
     header
         display: none
 
@@ -199,8 +199,11 @@ main
 
             .skills
                 zoom: 0.5
-                -moz-transform: scale(0.5)
+                -moz-transform: scale(0.75)
                 -moz-transform-origin: 0 0
+
+            img.skills
+                width: 100%
 
         #education
             @include display(flex)
@@ -232,3 +235,94 @@ main
 
             hr
                 margin-top: 2rem
+
+@media print
+    header
+        display: none
+
+    main
+        @include display(flex)
+        flex-direction: column
+        align-items: center
+        width: 55rem
+        background-color: #fff
+
+        header#desktop-header
+            @include display(flex)
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            padding: 2rem
+            width: 55rem
+            background-color: #8fb4ef
+
+            h1
+                font-family: open_sansregular, Arial, sans-serif
+                font-size: 5rem
+
+            h2
+                font-size: 3rem
+
+            h1, h2
+                width: 40rem
+
+        section
+            background-color: #fff
+            font-size: 1.5rem
+            padding: 1rem
+            width: 50rem
+            margin: 1rem
+
+            h2
+                font-size: 2rem
+                margin: 1rem 0 1rem
+
+        #skills
+            @include display(flex)
+            flex-direction: row
+            flex-wrap: wrap
+
+            figure
+                margin: 1rem
+                position: relative
+                max-width: none
+                width: 5rem
+                height: 5rem
+
+            .skills
+                zoom: 0.5
+                -moz-transform: scale(0.75)
+                -moz-transform-origin: 0 0
+
+            img.skills
+                width: 100%
+
+        #education
+            @include display(flex)
+            flex-direction: column
+
+            figure
+                @include display(flex)
+                flex-direction: row
+                align-items: flex-start
+                max-width: none
+                width: 100%
+                margin: 1rem 0
+
+            img
+                margin-right: 2rem
+                width: 16rem
+
+            figcaption
+                margin: 0 0 0 2rem
+                font-size: 1.25rem
+
+            h3
+                font-family: 'open_sanssemibold', Arial, sans-serif
+
+        footer
+            width: 50rem
+            font-size: 0.9rem
+
+            hr
+                margin-top: 1.5rem
