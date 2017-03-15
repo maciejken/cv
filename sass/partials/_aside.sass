@@ -110,153 +110,91 @@ aside
             color: darken(#fff, 30%)
 
 @media screen and (min-width: 800px)
+    @include print-styles
+    // aside
+    //     width: 25rem
+    //     // order: 0
+    //
+    //
+    //     // i[class*=fa]
+    //     //     font-size: 2rem
+    //     //     margin: 0 1rem
+    //
+    //     figure
+    //         display: block
+    //         width: 16rem
+    //         height: 16rem
+    //         overflow: hidden
+    //         background-color: #fff
+    //         border-radius: 50%
+    //         max-width: 400px
+    //
+    //     h2
+    //         font-size: 1.5rem
+    //         border-bottom: 1px solid #fff
+    //         padding: 0.5rem 0
+    //         background-color: transparent
+    //         text-align: left
+    //
+    //     section
+    //         width: 100%
+    //         padding: 0 0 0 2rem
+    //         font-size: 1.25rem
+    //         margin: 1rem 0
+    //
+    //     .info
+    //         display: block
+    //
+    //         a
+    //             color: #fff
+    //             text-decoration: none
+    //
+    //         a[href]
+    //             background-color: transparent
+    //
+    //             &:hover
+    //                 color: lighten(#000, 10%)
+    //                 background-color: darken(#fff, 10%)
+    //
+    //     .languages
+    //         .info .progress
+    //             height: 3rem
+    //             width: 3rem
+    //             position: absolute
+    //             top: -0.25rem
+    //             left: -0.235rem
+    //
+    //         figure
+    //             display: block
+    //             margin: 2rem 1rem
+    //             position: relative
+    //             overflow: visible
+    //
+    //         img
+    //             filter: grayscale(60%)
+    //             width: 2.5rem
+    //             height: 2.5rem
+    //             border-radius: 50%
+    //
+    //         figcaption
+    //             @include display(flex)
+    //             flex-direction: column
+    //             line-height: 1.5rem
+    //             margin: 1rem 0
+    //             width: 15rem
+    //             position: absolute
+    //
+    //         span
+    //             margin: 0
+    //             padding: 0
+    //             font-size: 1rem
+    //             color: darken(#fff, 30%)
+
     aside
-        width: 25rem
-        // order: 0
-
-
-        // i[class*=fa]
-        //     font-size: 2rem
-        //     margin: 0 1rem
-
-        figure
-            display: block
-            width: 16rem
-            height: 16rem
-            overflow: hidden
-            background-color: #fff
-            border-radius: 50%
-            max-width: 400px
-
-        h2
-            font-size: 1.5rem
-            border-bottom: 1px solid #fff
-            padding: 0.5rem 0
-            background-color: transparent
-            text-align: left
-
-        section
-            width: 100%
-            padding: 0 0 0 2rem
-            font-size: 1.25rem
-            margin: 1rem 0
-
         .info
-            display: block
-
-            a
-                color: #fff
-                text-decoration: none
-
-            a[href]
-                background-color: transparent
-
-                &:hover
+            a[href]:hover
                     color: lighten(#000, 10%)
                     background-color: darken(#fff, 10%)
 
-        .languages
-            .info .progress
-                height: 3rem
-                width: 3rem
-                position: absolute
-                top: -0.25rem
-                left: -0.235rem
-
-            figure
-                display: block
-                margin: 2rem 1rem
-                // height: 2.5rem
-                // width: 2.5rem
-                position: relative
-                overflow: visible
-
-            img
-                filter: grayscale(60%)
-                width: 2.5rem
-                height: 2.5rem
-                border-radius: 50%
-
-            figcaption
-                @include display(flex)
-                flex-direction: column
-                line-height: 1.5rem
-                margin: 1rem 0
-                width: 15rem
-                position: absolute
-
-            span
-                margin: 0
-                padding: 0
-                font-size: 1rem
-                color: darken(#fff, 30%)
-
 @media print
-    aside
-        width: 25rem
-
-        figure
-            display: block
-            width: 16rem
-            height: 16rem
-            overflow: hidden
-            background-color: #fff
-            border-radius: 50%
-            max-width: 400px
-
-        h2
-            font-size: 1.5rem
-            border-bottom: 1px solid #fff
-            padding: 0.5rem 0
-            background-color: transparent
-            text-align: left
-
-        section
-            width: 100%
-            padding: 0 0 0 2rem
-            font-size: 1.25rem
-            margin: 1rem 0
-
-        .info
-            display: block
-
-            a
-                color: #fff
-                text-decoration: none
-
-            a[href]
-                background-color: transparent
-
-        .languages
-            .info .progress
-                height: 3rem
-                width: 3rem
-                position: absolute
-                top: -0.25rem
-                left: -0.235rem
-
-            figure
-                display: block
-                margin: 2rem 1rem
-                position: relative
-                overflow: visible
-
-            img
-                filter: grayscale(60%)
-                width: 2.5rem
-                height: 2.5rem
-                border-radius: 50%
-
-            figcaption
-                @include display(flex)
-                flex-direction: column
-                line-height: 1.5rem
-                margin: 1rem 0
-                width: 15rem
-                position: absolute
-
-            span
-                margin: 0
-                padding: 0
-                font-size: 1rem
-                color: darken(#fff, 30%)
+    @include print-styles

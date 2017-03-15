@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV Maciej Kędra</title>
-    <link rel="stylesheet" href="assets/o_mnie/style.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
-    <script src="assets/o_mnie/js/app.js"></script>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/o_mnie/style.css">
+    <script src="<?php bloginfo('template_directory');?>/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="<?php bloginfo('template_directory');?>/node_modules/progressbar.js/dist/progressbar.min.js"></script>
+    <script src="<?php bloginfo('template_directory');?>/assets/o_mnie/js/app.js"></script>
 </head>
 <body>
     <div class="container">
@@ -18,7 +18,7 @@
         </header>
         <aside>
             <figure id="face">
-                <img src="assets/o_mnie/images/maciejken.jpg" alt="face">
+                <img src="<?php bloginfo('template_directory');?>/assets/o_mnie/images/maciejken.jpg" alt="face">
             </figure>
             <section class="contact">
                 <h2>CONTACT</h2>
@@ -56,7 +56,7 @@
                 <h2>LANGUAGES</h2>
                 <div class="info">
                     <figure>
-                        <img src="assets/o_mnie/images/polska.png" alt="Polish">
+                        <img src="<?php bloginfo('template_directory');?>/assets/o_mnie/images/polska.png" alt="Polish">
                         <div class="progress" id="polish"></div>
                         <figcaption>
                             <h3>Polish</h3>
@@ -64,7 +64,7 @@
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/o_mnie/images/uk.png" alt="English">
+                        <img src="<?php bloginfo('template_directory');?>/assets/o_mnie/images/uk.png" alt="English">
                         <div class="progress" id="english"></div>
                         <figcaption>
                             <div>
@@ -74,7 +74,7 @@
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/o_mnie/images/italia.png" alt="Italian">
+                        <img src="<?php bloginfo('template_directory');?>/assets/o_mnie/images/italia.png" alt="Italian">
                         <div class="progress" id="italian"></div>
                         <figcaption>
                             <h3>Italian</h3>
@@ -82,7 +82,7 @@
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/o_mnie/images/france.png" alt="French">
+                        <img src="<?php bloginfo('template_directory');?>/assets/o_mnie/images/france.png" alt="French">
                         <div class="progress" id="french"></div>
                         <figcaption>
                             <h3>French</h3>
@@ -166,7 +166,7 @@
                 <h2><i class="fa fa-graduation-cap"></i> COURSES &amp;&nbsp;EDUCATION</h2>
                 <div id="education">
                     <figure>
-                        <img src="assets/o_mnie/images/coderslab.png" alt="Coders Lab">
+                        <img src="<?php bloginfo('template_directory');?>/assets/o_mnie/images/coderslab.png" alt="Coders Lab">
                         <figcaption>
                             <p>01.2017 - 02.2017</p>
                             <h3>Become Front-End Developer</h3>
@@ -174,7 +174,7 @@
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/o_mnie/images/uam.jpg" alt="UAM">
+                        <img src="<?php bloginfo('template_directory');?>/assets/o_mnie/images/uam.jpg" alt="UAM">
                         <figcaption>
                             <p>2001 - 2004</p>
                             <h3>Italian Language and Culture</h3>
@@ -187,7 +187,7 @@
                 <h2><i class="fa fa-briefcase"></i> PROFESSIONAL EXPERIENCE</h2>
                 <div id="experience">
                     <figure>
-                        <img src="assets/o_mnie/images/hpe.png" alt="HPE">
+                        <img src="<?php bloginfo('template_directory');?>/assets/o_mnie/images/hpe.png" alt="HPE">
                         <figcaption>
                             <p>06.2016 - 12.2016</p>
                             <h3>Junior HR Administration Specialist</h3>
@@ -195,7 +195,7 @@
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/o_mnie/images/qatar.png" alt="Qatar Airways">
+                        <img src="<?php bloginfo('template_directory');?>/assets/o_mnie/images/qatar.png" alt="Qatar Airways">
                         <figcaption>
                             <p>01.2014 - 05.2016</p>
                             <h3>Customer Services Agent</h3>
