@@ -23,14 +23,10 @@
             <section class="contact">
                 <h2>CONTACT</h2>
                 <div class="info">
-                    <a>
-                        <i class="fa fa-phone fa-lg"></i>
-                        <span>(+48) 787 647 535</span>
-                    </a>
-                    <a href="mailto:maciejken@gmail.com">
+                    <a href="http://maciejken.pl/kontakt">
                         <i class="fa fa-envelope fa-lg"></i>
                         <span>
-                            maciejken@gmail.com
+                            contact form
                         </span>
                     </a>
                 </div>
